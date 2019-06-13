@@ -1,0 +1,50 @@
+.mainBg {
+	background-repeat: no-repeat !important;
+	width: 100%;
+	background-size: cover !important;
+	background: $url_2;
+	background-position: center;
+	height: 700px;
+}
+.mainSection {
+	position: relative;
+}
+.mainSection_mainTitle {
+	color: $white;
+	font-size: 52px;
+	max-width: 70%;
+	text-align: center;
+	font-family: $montserrat_font, $sans-serif_font;
+	font-weight: Bold;
+	margin: 0 auto;
+	margin-top: 240px;
+	a {
+		margin-top: 37px;
+		display: inline-block;
+	}
+	h2 {
+		display: none;
+	}
+}
+.header {
+	display: flex;
+	width: auto;
+	max-width: 940px;
+	margin: 0 auto;
+	justify-content: space-between;
+	height: 50px;
+	z-index: 999999;
+	padding-top: 15px;
+}
+.header_title {
+	color: $white;
+	font-weight: bold;
+	font-size: 20px;
+}
+.mainSection_titleContainer {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+}

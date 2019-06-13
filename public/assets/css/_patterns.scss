@@ -1,0 +1,23 @@
+.seeOtherPartners {
+	text-align: center;
+	margin-top: 60px;
+	margin-bottom: 78px;
+	a {
+		color: $red;
+		background: none;
+	}
+}
+.searchPartners {
+	text-align: center;
+	p {
+		font-size: 18px;
+		font-weight: 400;
+		margin-top: 44px;
+		margin-bottom: 30px;
+		color: $color_storm_dust_approx;
+	}
+	input[type=text] {
+		padding: 6px 52px 6px 6px;
+		font-family: $roboto_font, $sans-serif_font;
+	}
+}

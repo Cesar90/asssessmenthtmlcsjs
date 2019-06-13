@@ -1,0 +1,168 @@
+@media(min-width: 768px) {
+	.call-outs-container {
+		display: flex;
+		justify-content: space-between;
+	}
+	.mainSection_mainTitle p {
+		display: none;
+	}
+}
+@media(max-width: 768px) {
+	.featuresItem-alternative {
+		flex-basis: calc(50% - 12px);
+	}
+	.littleIcon {
+		right: 133px;
+		top: 111px;
+	}
+	.littleIcon--blue {
+		top: 110px;
+	}
+	.mainSection_mainTitle p {
+		display: block;
+		font-family: $roboto_font, $sans-serif_font;
+		font-size: 24px;
+		font-weight: 500;
+		margin-top: 22px;
+	}
+}
+@media(max-width: 767px) {
+	.call-outs-container div {
+		margin: 0 auto;
+		margin-bottom: 15px;
+	}
+}
+@media(max-width:460px) {
+	.mainSection_mainTitle {
+		margin-top: 186px;
+		font-size: 31px;
+		h2 {
+			display: block;
+		}
+		p {
+			font-size: 20px;
+		}
+	}
+	.featuresItem-alternative {
+		flex-basis: 100%;
+	}
+	.header {
+		justify-content: center;
+	}
+	.header_title {
+		display: none;
+	}
+	.featuresSteps {
+		height: 200px;
+	}
+	.galleryContainerItems {
+		height: 120px;
+	}
+	.imgBlockGallery {
+		margin-top: 12px;
+	}
+	.searchPartners {
+		input[type=text] {
+			display: block;
+			margin: 0 auto;
+			width: 69%;
+			margin-bottom: 15px;
+		}
+		a {
+			display: block;
+			width: 80%;
+			margin: 0 auto;
+		}
+	}
+	.footer-two {
+		ul {
+			display: none;
+		}
+		h3 {
+			text-align: center;
+			font-size: 25px;
+			margin-bottom: 1px;
+		}
+	}
+	.columnContainer {
+		display: initial;
+	}
+	.footer-two_links {
+		max-width: 1400px;
+		background-color: $white;
+		display: flex !important;
+		align-items: center;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+	.footer-two_link {
+		height: 16px;
+		line-height: 67px;
+		font-weight: 200;
+		font-size: 23px;
+		margin-bottom: 20px;
+		color: $color_mountain_mist_approx;
+		font-family: $roboto_font, $sans-serif_font;
+	}
+	.featuresSteps_content {
+		display: initial;
+		h3 {
+			font-size: 20px;
+			font-weight: bold;
+			margin-bottom: 1px;
+		}
+		p {
+			line-height: initial;
+			font-size: 12px;
+		}
+	}
+	.header_action a:nth-child(2) {
+		margin-top: 3px;
+	}
+	.footer-one h3 {
+		color: $color_sunset_orange_approx;
+		text-align: center;
+		font-size: 24px;
+		margin-bottom: 15px;
+	}
+	.footer-three h3 {
+		text-align: center;
+		font-size: 25px;
+		margin-bottom: 1px;
+		margin-top: 25px;
+	}
+}
+@media(max-width:375px) {
+	.mainSection_mainTitle {
+		font-size: 24px;
+	}
+	.searchPartners {
+		p {
+			font-size: 16px;
+		}
+		input[type=text] {
+			width: 65%;
+		}
+		a {
+			width: 78%;
+			margin-top: 11px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+	}
+}
+.header_action a {
+	color: $white;
+	font-size: 14px;
+	text-decoration: none;
+	display: inline-block;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 50px;
+	padding: 10px;
+	&:nth-child(1) {
+		margin-right: 2px;
+	}
+	&:nth-child(2) {
+		border: 1px solid $white;
+	}
+}

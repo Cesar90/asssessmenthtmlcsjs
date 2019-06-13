@@ -1,0 +1,19 @@
+{
+  "name": "asssessmenthtmlcsjs",
+  "version": "1.0.0",
+  "description": "asssessmenthtmlcsjs",
+  "main": "index.js",
+  "scripts": {
+    "node-sass":
+      "node-sass --output-style compressed -o public/assets/css/ public/assets/css/style.scss",
+    "run-server": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

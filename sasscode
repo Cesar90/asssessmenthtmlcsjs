@@ -1,0 +1,805 @@
+//colors
+$color_sunset_orange_approx: #ff4e50;
+$white: #fff;
+$color_mountain_mist_approx: #999999;
+$color_tundora_approx: #444444;
+$color_java_approx: #19d4ca;
+$color_sun_approx: #ffa710;
+$color_storm_dust_approx: #666666;
+$red: red;
+
+//fonts
+$font_0: Roboto;
+$font_1: sans-serif;
+$font_2: Helvetica;
+$font_3: Montserrat;
+
+//urls
+$url_0: url(https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap);
+$url_1: url(https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap);
+$url_2: url(../img/backgroundBitmap.png);
+$url_3: url(../img/Step1.png);
+$url_4: url(../img/Step2.png);
+$url_5: url(../img/Step3.png);
+$url_6: url(../img/Sports.png);
+$url_7: url(../img/Wellness.png);
+$url_8: url(../img/Extreme.png);
+$url_9: url(../img/Games.png);
+$url_10: url(../img/culture.png);
+$url_11: url(../img/enjoymentRelaxation.png);
+$url_12: url(../img/Traveling.png);
+
+//@extend-elements
+//original selectors
+//html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+%extend_1 {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+@import $url_0;
+@import $url_1;
+html {
+	@extend %extend_1;
+	padding: 0;
+	margin: 0;
+}
+body {
+	@extend %extend_1;
+	line-height: 1;
+	padding-bottom: 100px;
+	font-family: $font_3, $font_1;
+	padding: 0;
+	margin: 0;
+}
+div {
+	@extend %extend_1;
+}
+span {
+	@extend %extend_1;
+}
+applet {
+	@extend %extend_1;
+}
+object {
+	@extend %extend_1;
+}
+iframe {
+	@extend %extend_1;
+}
+h1 {
+	@extend %extend_1;
+}
+h2 {
+	@extend %extend_1;
+	margin: 0 0 .75em 0;
+}
+h3 {
+	@extend %extend_1;
+	margin: 0 0 .75em 0;
+}
+h4 {
+	@extend %extend_1;
+}
+h5 {
+	@extend %extend_1;
+}
+h6 {
+	@extend %extend_1;
+}
+p {
+	@extend %extend_1;
+}
+blockquote {
+	@extend %extend_1;
+	quotes: none;
+	&:before {
+		content: '';
+		content: none;
+	}
+	&:after {
+		content: '';
+		content: none;
+	}
+}
+pre {
+	@extend %extend_1;
+}
+a {
+	@extend %extend_1;
+}
+abbr {
+	@extend %extend_1;
+}
+acronym {
+	@extend %extend_1;
+}
+address {
+	@extend %extend_1;
+}
+big {
+	@extend %extend_1;
+}
+cite {
+	@extend %extend_1;
+}
+code {
+	@extend %extend_1;
+}
+del {
+	@extend %extend_1;
+}
+dfn {
+	@extend %extend_1;
+}
+em {
+	@extend %extend_1;
+}
+img {
+	@extend %extend_1;
+}
+ins {
+	@extend %extend_1;
+}
+kbd {
+	@extend %extend_1;
+}
+q {
+	@extend %extend_1;
+	quotes: none;
+	&:before {
+		content: '';
+		content: none;
+	}
+	&:after {
+		content: '';
+		content: none;
+	}
+}
+s {
+	@extend %extend_1;
+}
+samp {
+	@extend %extend_1;
+}
+small {
+	@extend %extend_1;
+}
+strike {
+	@extend %extend_1;
+}
+strong {
+	@extend %extend_1;
+}
+sub {
+	@extend %extend_1;
+}
+sup {
+	@extend %extend_1;
+}
+tt {
+	@extend %extend_1;
+}
+var {
+	@extend %extend_1;
+}
+b {
+	@extend %extend_1;
+}
+u {
+	@extend %extend_1;
+}
+i {
+	@extend %extend_1;
+}
+center {
+	@extend %extend_1;
+}
+dl {
+	@extend %extend_1;
+}
+dt {
+	@extend %extend_1;
+}
+dd {
+	@extend %extend_1;
+}
+ol {
+	@extend %extend_1;
+	list-style: none;
+}
+ul {
+	@extend %extend_1;
+	list-style: none;
+}
+li {
+	@extend %extend_1;
+}
+fieldset {
+	@extend %extend_1;
+}
+form {
+	@extend %extend_1;
+}
+label {
+	@extend %extend_1;
+}
+legend {
+	@extend %extend_1;
+}
+table {
+	@extend %extend_1;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+caption {
+	@extend %extend_1;
+}
+tbody {
+	@extend %extend_1;
+}
+tfoot {
+	@extend %extend_1;
+}
+thead {
+	@extend %extend_1;
+}
+tr {
+	@extend %extend_1;
+}
+th {
+	@extend %extend_1;
+}
+td {
+	@extend %extend_1;
+}
+article {
+	@extend %extend_1;
+	display: block;
+}
+aside {
+	@extend %extend_1;
+	display: block;
+}
+canvas {
+	@extend %extend_1;
+}
+details {
+	@extend %extend_1;
+	display: block;
+}
+embed {
+	@extend %extend_1;
+}
+figure {
+	@extend %extend_1;
+	display: block;
+}
+figcaption {
+	@extend %extend_1;
+	display: block;
+}
+footer {
+	@extend %extend_1;
+	display: block;
+}
+header {
+	@extend %extend_1;
+	display: block;
+}
+hgroup {
+	@extend %extend_1;
+	display: block;
+}
+menu {
+	@extend %extend_1;
+	display: block;
+}
+nav {
+	@extend %extend_1;
+	display: block;
+}
+output {
+	@extend %extend_1;
+}
+ruby {
+	@extend %extend_1;
+}
+section {
+	@extend %extend_1;
+	display: block;
+}
+summary {
+	@extend %extend_1;
+}
+time {
+	@extend %extend_1;
+}
+mark {
+	@extend %extend_1;
+}
+audio {
+	@extend %extend_1;
+}
+video {
+	@extend %extend_1;
+}
+input {
+	font-size: 14px;
+	font-family: $font_2, $font_1;
+}
+.mainBg {
+	background-repeat: no-repeat !important;
+	width: 100%;
+	background-size: cover !important;
+	background: $url_2;
+	background-position: center;
+	height: 700px;
+}
+.mainSection {
+	position: relative;
+}
+.mainSection_mainTitle {
+	color: $white;
+	font-size: 52px;
+	max-width: 70%;
+	text-align: center;
+	font-family: $font_3, $font_1;
+	font-weight: Bold;
+	margin: 0 auto;
+	margin-top: 240px;
+	a {
+		margin-top: 37px;
+		display: inline-block;
+	}
+	h2 {
+		display: none;
+	}
+}
+.header {
+	display: flex;
+	width: auto;
+	max-width: 940px;
+	margin: 0 auto;
+	justify-content: space-between;
+	height: 50px;
+	z-index: 999999;
+	padding-top: 15px;
+}
+.header_title {
+	color: $white;
+	font-weight: bold;
+	font-size: 20px;
+}
+.mainSection_titleContainer {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+}
+.commonContainer {
+	max-width: 940px;
+	margin: 40px auto 0 auto;
+}
+.titleSection {
+	font-size: 25px;
+	font-weight: bold;
+	text-align: center;
+	color: $color_tundora_approx;
+}
+.call-outs-container {
+	max-width: 940px;
+	margin: 40px auto 0 auto;
+}
+.call-out {
+	padding: 20px;
+	//Instead of the line below you could use @include box-sizing($bs)
+	box-sizing: border-box;
+	margin-bottom: 20px;
+	flex-basis: 30%;
+}
+.featuresSteps {
+	width: 300px;
+	height: 400px;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.featuresSteps-one {
+	background: $url_3;
+}
+.featuresSteps-two {
+	background: $url_4;
+}
+.featuresSteps-three {
+	background: $url_5;
+}
+.featuresItems-alternative {
+	display: flex;
+	flex: 1;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.featuresItem-alternative {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	//Instead of the line below you could use @include box-sizing($bs)
+	box-sizing: border-box;
+	flex: 1;
+	text-align: center;
+	position: relative;
+	&:nth-child(3) {
+		top: 12px;
+	}
+	h3 {
+		font-size: 14px;
+		font-weight: bold;
+		color: $color_tundora_approx;
+	}
+	p {
+		font-size: 14px;
+		color: $color_storm_dust_approx;
+		line-height: 1.6em;
+	}
+}
+.featuresItem-alternative_img {
+	width: 120px;
+	margin: 0 auto;
+	margin-bottom: 16px;
+}
+.littleIcon {
+	width: 20px;
+	height: 20px;
+	background: $color_sunset_orange_approx;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 50px;
+	padding: 4px;
+	position: absolute;
+	right: 60px;
+	top: 116px;
+	img {
+		position: relative;
+		top: 2px;
+	}
+}
+.littleIcon--blue {
+	background-color: $color_java_approx;
+	top: 118px;
+}
+.littleIcon--yellow {
+	background-color: $color_sun_approx;
+	top: 109px;
+}
+.galleryContainerItems {
+	width: 300px;
+	height: 310px;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	display: flex;
+	p {
+		color: $white;
+		font-weight: bold;
+		font-size: 22px;
+		text-align: center;
+		margin: auto;
+	}
+}
+.imgGalleryOne {
+	background: $url_6;
+}
+.imgGalleryTwo {
+	background: $url_7;
+}
+.imgGalleryThree {
+	background: $url_8;
+}
+.imgGalleryFour {
+	flex-basis: 30%;
+	background: $url_9;
+}
+.imgGalleryFive {
+	flex-basis: 65%;
+	background: $url_10;
+}
+.imgGallerySix {
+	flex-basis: 65%;
+	background: $url_11;
+}
+.imgGallerySeven {
+	flex-basis: 30%;
+	background: $url_12;
+}
+.commonButton {
+	color: $white;
+	font-size: 14px;
+	text-decoration: none;
+	display: inline-block;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 50px;
+	padding: 10px 15px;
+	border: 1px solid $color_sunset_orange_approx;
+	background: $color_sunset_orange_approx;
+	font-family: $font_3, $font_1;
+}
+.featuresSteps_content {
+	color: $white;
+	align-self: flex-end;
+	a {
+		font-size: 10px;
+		font-weight: 400;
+	}
+	h3 {
+		font-size: 24px;
+		font-weight: bold;
+	}
+	p {
+		font-family: $font_3, $font_1;
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 1.6em;
+	}
+}
+.seeOtherPartners {
+	text-align: center;
+	margin-top: 60px;
+	margin-bottom: 78px;
+	a {
+		color: $red;
+		background: none;
+	}
+}
+.searchPartners {
+	text-align: center;
+	p {
+		font-size: 18px;
+		font-weight: 400;
+		margin-top: 44px;
+		margin-bottom: 30px;
+		color: $color_storm_dust_approx;
+	}
+	input[type=text] {
+		padding: 6px 52px 6px 6px;
+		font-family: $font_0, $font_1;
+	}
+}
+.footer {
+	border-top: 2px solid $color_sunset_orange_approx;
+	margin-top: 70px;
+}
+.columnContainer {
+	display: flex;
+}
+.footer-one {
+	flex: 1;
+	h3 {
+		color: $color_sunset_orange_approx;
+	}
+}
+.footer-two {
+	flex: 1;
+	font-size: 14px;
+	h3 {
+		font-weight: bold;
+		color: $color_tundora_approx;
+	}
+	.fixed-size-container {
+		display: none;
+	}
+	ul li {
+		margin-top: 14px;
+		a {
+			color: $color_mountain_mist_approx;
+			font-size: 14px;
+			margin-top: 3px;
+			text-decoration: none;
+		}
+	}
+}
+.footer-three {
+	flex: 1;
+	font-size: 14px;
+	h3 {
+		font-weight: bold;
+		color: $color_tundora_approx;
+	}
+}
+.footer-four {
+	flex: 1;
+	font-size: 14px;
+}
+.container {
+	max-width: 750px;
+	margin: 20px auto 0 auto;
+	padding: 30px;
+	background-color: $white;
+}
+.form-row {
+	padding: 10px 0;
+	display: flex;
+	label {
+		padding-right: 10px;
+	}
+	input {
+		flex: 1;
+	}
+}
+.footer-two_links {
+	display: none;
+}
+@media(min-width: 768px) {
+	.call-outs-container {
+		display: flex;
+		justify-content: space-between;
+	}
+	.mainSection_mainTitle p {
+		display: none;
+	}
+}
+@media(max-width: 768px) {
+	.featuresItem-alternative {
+		flex-basis: calc(50% - 12px);
+	}
+	.littleIcon {
+		right: 133px;
+		top: 111px;
+	}
+	.littleIcon--blue {
+		top: 110px;
+	}
+	.mainSection_mainTitle p {
+		display: block;
+		font-family: $font_0, $font_1;
+		font-size: 24px;
+		font-weight: 500;
+		margin-top: 22px;
+	}
+}
+@media(max-width: 767px) {
+	.call-outs-container div {
+		margin: 0 auto;
+		margin-bottom: 15px;
+	}
+}
+@media(max-width:460px) {
+	.mainSection_mainTitle {
+		margin-top: 186px;
+		font-size: 31px;
+		h2 {
+			display: block;
+		}
+		p {
+			font-size: 20px;
+		}
+	}
+	.featuresItem-alternative {
+		flex-basis: 100%;
+	}
+	.header {
+		justify-content: center;
+	}
+	.header_title {
+		display: none;
+	}
+	.featuresSteps {
+		height: 200px;
+	}
+	.galleryContainerItems {
+		height: 120px;
+	}
+	.imgBlockGallery {
+		margin-top: 12px;
+	}
+	.searchPartners {
+		input[type=text] {
+			display: block;
+			margin: 0 auto;
+			width: 69%;
+			margin-bottom: 15px;
+		}
+		a {
+			display: block;
+			width: 80%;
+			margin: 0 auto;
+		}
+	}
+	.footer-two {
+		ul {
+			display: none;
+		}
+		h3 {
+			text-align: center;
+			font-size: 25px;
+			margin-bottom: 1px;
+		}
+	}
+	.columnContainer {
+		display: initial;
+	}
+	.footer-two_links {
+		max-width: 1400px;
+		background-color: $white;
+		display: flex !important;
+		align-items: center;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+	.footer-two_link {
+		height: 16px;
+		line-height: 67px;
+		font-weight: 200;
+		font-size: 23px;
+		margin-bottom: 20px;
+		color: $color_mountain_mist_approx;
+		font-family: $font_0, $font_1;
+	}
+	.featuresSteps_content {
+		display: initial;
+		h3 {
+			font-size: 20px;
+			font-weight: bold;
+			margin-bottom: 1px;
+		}
+		p {
+			line-height: initial;
+			font-size: 12px;
+		}
+	}
+	.header_action a:nth-child(2) {
+		margin-top: 3px;
+	}
+	.footer-one h3 {
+		color: $color_sunset_orange_approx;
+		text-align: center;
+		font-size: 24px;
+		margin-bottom: 15px;
+	}
+	.footer-three h3 {
+		text-align: center;
+		font-size: 25px;
+		margin-bottom: 1px;
+		margin-top: 25px;
+	}
+}
+@media(max-width:375px) {
+	.mainSection_mainTitle {
+		font-size: 24px;
+	}
+	.searchPartners {
+		p {
+			font-size: 16px;
+		}
+		input[type=text] {
+			width: 65%;
+		}
+		a {
+			width: 78%;
+			margin-top: 11px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+	}
+}
+.header_action a {
+	color: $white;
+	font-size: 14px;
+	text-decoration: none;
+	display: inline-block;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 50px;
+	padding: 10px;
+	&:nth-child(1) {
+		margin-right: 2px;
+	}
+	&:nth-child(2) {
+		border: 1px solid $white;
+	}
+}

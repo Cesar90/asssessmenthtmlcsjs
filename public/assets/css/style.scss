@@ -1,0 +1,32 @@
+@import '_reset';
+@import '_variables';
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap);
+
+@import '_header';
+@import '_commonElement';
+@import '_features';
+@import '_gallery';
+
+.featuresSteps_content {
+	color: $white;
+	align-self: flex-end;
+	a {
+		font-size: 10px;
+		font-weight: 400;
+	}
+	h3 {
+		font-size: 24px;
+		font-weight: bold;
+	}
+	p {
+		font-family: $montserrat_font, $sans-serif_font;
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 1.6em;
+	}
+}
+
+@import '_patterns';
+@import '_footer';
+@import '_mediaqueries';

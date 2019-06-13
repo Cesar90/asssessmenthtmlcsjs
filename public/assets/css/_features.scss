@@ -1,0 +1,76 @@
+.featuresSteps {
+	width: 300px;
+	height: 400px;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.featuresSteps-one {
+	background: $url_3;
+}
+.featuresSteps-two {
+	background: $url_4;
+}
+.featuresSteps-three {
+	background: $url_5;
+}
+.featuresItems-alternative {
+	display: flex;
+	flex: 1;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.featuresItem-alternative {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	//Instead of the line below you could use @include box-sizing($bs)
+	box-sizing: border-box;
+	flex: 1;
+	text-align: center;
+	position: relative;
+	&:nth-child(3) {
+		top: 12px;
+	}
+	h3 {
+		font-size: 14px;
+		font-weight: bold;
+		color: $color_tundora_approx;
+	}
+	p {
+		font-size: 14px;
+		color: $color_storm_dust_approx;
+		line-height: 1.6em;
+	}
+}
+.featuresItem-alternative_img {
+	width: 120px;
+	margin: 0 auto;
+	margin-bottom: 16px;
+}
+
+.littleIcon {
+	width: 20px;
+	height: 20px;
+	background: $color_sunset_orange_approx;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 50px;
+	padding: 4px;
+	position: absolute;
+	right: 60px;
+	top: 116px;
+	img {
+		position: relative;
+		top: 2px;
+	}
+}
+.littleIcon--blue {
+	background-color: $color_java_approx;
+	top: 118px;
+}
+.littleIcon--yellow {
+	background-color: $color_sun_approx;
+	top: 109px;
+}

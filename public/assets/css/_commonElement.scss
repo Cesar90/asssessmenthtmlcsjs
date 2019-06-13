@@ -1,0 +1,35 @@
+.commonContainer {
+	max-width: 940px;
+	margin: 40px auto 0 auto;
+}
+.titleSection {
+	font-size: 25px;
+	font-weight: bold;
+	text-align: center;
+	color: $color_tundora_approx;
+}
+
+.call-outs-container {
+	max-width: 940px;
+	margin: 40px auto 0 auto;
+}
+.call-out {
+	padding: 20px;
+	//Instead of the line below you could use @include box-sizing($bs)
+	box-sizing: border-box;
+	margin-bottom: 20px;
+	flex-basis: 30%;
+}
+
+.commonButton {
+	color: $white;
+	font-size: 14px;
+	text-decoration: none;
+	display: inline-block;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 50px;
+	padding: 10px 15px;
+	border: 1px solid $color_sunset_orange_approx;
+	background: $color_sunset_orange_approx;
+	font-family: $montserrat_font, $sans-serif_font;
+}
